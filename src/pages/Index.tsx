@@ -46,7 +46,7 @@ function Index() {
                 </button>
               ))}
               <Button onClick={() => scrollToSection('order')} className="hover-scale">
-                Записаться
+                Заказать
               </Button>
             </div>
             <button className="md:hidden">
@@ -63,11 +63,11 @@ function Index() {
             <div className="animate-fade-in">
               <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
                 Создаем портреты будущего с 
-                <span className="gradient-text"> нейрофотографией</span>
+                <span className="gradient-text"> ИИ-технологиями</span>
               </h1>
               <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
-                Уникальные портреты, созданные с помощью ИИ. Профессиональная съемка 
-                с креативной обработкой, которая подчеркнет вашу индивидуальность.
+                Загрузите свое фото и получите уникальные нейропортреты 
+                в любом стиле. От классики до фантастики - никаких ограничений!
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button 
@@ -75,8 +75,8 @@ function Index() {
                   className="hover-scale text-lg px-8 py-6"
                   onClick={() => scrollToSection('order')}
                 >
-                  <Icon name="Camera" className="mr-2" size={20} />
-                  Записаться на съемку
+                  <Icon name="Upload" className="mr-2" size={20} />
+                  Заказать нейропортрет
                 </Button>
                 <Button 
                   variant="outline" 
@@ -92,7 +92,7 @@ function Index() {
             <div className="animate-scale-in">
               <img 
                 src="/img/44819ea1-7555-4a47-81d2-f1ea12d71659.jpg" 
-                alt="Студия нейрофотографии" 
+                alt="ИИ-генерация портретов" 
                 className="w-full h-auto rounded-2xl shadow-2xl hover-scale"
               />
             </div>
@@ -116,33 +116,33 @@ function Index() {
             {[
               {
                 icon: 'Sparkles',
-                title: 'ИИ-технологии',
-                description: 'Используем новейшие нейросети для создания уникальных портретов'
+                title: 'Мощные ИИ-модели',
+                description: 'Используем DALL-E, Midjourney и собственные нейросети'
               },
               {
-                icon: 'Camera',
-                title: 'Профессиональная съемка',
-                description: 'Опытные фотографы с премиальным оборудованием'
+                icon: 'Upload',
+                title: 'Простое создание',
+                description: 'Загрузите фото, опишите стиль - получите результат'
               },
               {
                 icon: 'Palette',
-                title: 'Креативная обработка',
-                description: 'Каждый портрет - произведение искусства с авторским стилем'
+                title: 'Любой стиль',
+                description: 'От реалистичных портретов до фантастических образов'
               },
               {
-                icon: 'Heart',
-                title: 'Индивидуальный подход',
-                description: 'Учитываем ваши пожелания и создаем уникальный образ'
+                icon: 'Settings',
+                title: 'Полный контроль',
+                description: 'Настройка каждой детали: освещение, поза, фон, одежда'
               },
               {
                 icon: 'Zap',
-                title: 'Быстрый результат',
-                description: 'Готовые портреты через 2-3 дня после съемки'
+                title: 'Мгновенный результат',
+                description: 'Получайте первые варианты уже через несколько минут'
               },
               {
-                icon: 'Award',
-                title: 'Гарантия качества',
-                description: 'Переснимаем бесплатно, если результат вас не устроит'
+                icon: 'RefreshCw',
+                title: 'Неограниченные правки',
+                description: 'Перегенерируем до тех пор, пока результат не будет идеальным'
               }
             ].map((advantage, index) => (
               <Card key={index} className="hover-scale h-full animate-fade-in border-2 hover:border-primary/20 transition-all duration-300">
@@ -208,9 +208,9 @@ function Index() {
                 result: '25+ кадров'
               },
               {
-                title: 'Свадебная съемка',
-                description: 'Романтические портреты молодоженов',
-                category: 'Свадьба',
+                title: 'Фэнтези портреты',
+                description: 'Магические образы эльфов, воинов, волшебников',
+                category: 'Фэнтези',
                 result: '100+ фото'
               }
             ].map((project, index) => (
@@ -260,7 +260,7 @@ function Index() {
             {[
               {
                 name: 'Анна Петрова',
-                position: 'Модель',
+                position: 'Блогер',
                 rating: 5,
                 text: 'Невероятные портреты! Такого результата я не ожидала. Каждый кадр - как из фантастического фильма!'
               },
@@ -268,13 +268,13 @@ function Index() {
                 name: 'Михаил Громов',
                 position: 'Предприниматель',
                 rating: 5,
-                text: 'Сделал корпоративные фото для LinkedIn. Коллеги в восторге! Выглядит стильно и современно.'
+                text: 'Сделал аватарки для LinkedIn и соцсетей. Коллеги в восторге! Выглядит стильно и современно.'
               },
               {
                 name: 'Елена Смирнова',
                 position: 'Художница',
                 rating: 5,
-                text: 'Это не просто фотография - это искусство! Команда НейроФото превзошла все мои ожидания.'
+                text: 'Это не просто фотография - это искусство! НейроФото превзошло все мои ожидания.'
               }
             ].map((review, index) => (
               <Card key={index} className="hover-scale animate-fade-in border-2 hover:border-primary/20 transition-all duration-300">
@@ -310,50 +310,50 @@ function Index() {
               Тарифы и <span className="gradient-text">цены</span>
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Выберите подходящий пакет для вашей нейрофотосессии
+              Выберите подходящий пакет для создания нейропортретов
             </p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
             {[
               {
-                title: 'Базовый',
-                price: '15 000',
-                period: 'за съемку',
+                title: 'Мини',
+                price: '1 990',
+                period: 'за пакет',
                 features: [
-                  '1 час съемки в студии',
-                  '15 обработанных нейропортретов',
+                  '10 нейропортретов',
                   '3 стиля на выбор',
-                  'Готовые фото через 3 дня',
-                  'Файлы в высоком разрешении'
+                  'Готово за 24 часа',
+                  'Файлы 4K качества',
+                  'Основная ретушь'
                 ],
                 popular: false
               },
               {
-                title: 'Премиум',
-                price: '25 000',
-                period: 'за съемку',
+                title: 'Про',
+                price: '4 990',
+                period: 'за пакет',
                 features: [
-                  '2 часа съемки + консультация',
-                  '30 обработанных нейропортретов',
-                  '5 уникальных стилей',
-                  'Готовые фото через 2 дня',
-                  'Печатные версии в подарок',
-                  'Дополнительные образы'
+                  '30 нейропортретов',
+                  '10 уникальных стилей',
+                  'Готово за 12 часов',
+                  'Профессиональная ретушь',
+                  'Кастомные промпты',
+                  'Неограниченные правки'
                 ],
                 popular: true
               },
               {
-                title: 'VIP',
-                price: '45 000',
-                period: 'за съемку',
+                title: 'Премиум',
+                price: '9 990',
+                period: 'за пакет',
                 features: [
-                  '4 часа съемки + стилист',
-                  '50+ обработанных портретов',
-                  'Безлимитные стили',
-                  'Экспресс-доставка за 24 часа',
-                  'Эксклюзивная фотокнига',
-                  'Персональный куратор'
+                  '100 нейропортретов',
+                  'Любые стили по запросу',
+                  'Экспресс-разработка за 3 часа',
+                  'Приоритетная поддержка',
+                  'Индивидуальные настройки',
+                  'Личный менеджер'
                 ],
                 popular: false
               }
@@ -414,7 +414,7 @@ function Index() {
             <div className="animate-fade-in">
               <img 
                 src="/img/647e57a9-2597-4f4e-9716-d236e8fd1f54.jpg" 
-                alt="Фотограф за работой" 
+                alt="ИИ-художник за работой" 
                 className="w-full h-auto rounded-2xl shadow-2xl hover-scale"
               />
             </div>
@@ -435,8 +435,8 @@ function Index() {
                   },
                   {
                     icon: 'MapPin',
-                    title: 'Студия',
-                    content: 'Москва, ул. Арбат, 25',
+                    title: 'Офис',
+                    content: 'Москва, онлайн-сервис',
                     href: '#'
                   },
                   {
@@ -470,18 +470,18 @@ function Index() {
           <div className="max-w-2xl mx-auto">
             <div className="text-center mb-12 animate-fade-in">
               <h2 className="text-3xl md:text-5xl font-bold mb-6">
-                Записаться на <span className="gradient-text">съемку</span>
+                Заказать <span className="gradient-text">нейропортреты</span>
               </h2>
               <p className="text-xl text-muted-foreground">
-                Заполните форму и мы свяжемся с вами для уточнения деталей
+                Опишите желаемый стиль и мы создадим уникальные портреты
               </p>
             </div>
 
             <Card className="animate-scale-in shadow-2xl border-2">
               <CardHeader>
-                <CardTitle className="text-2xl text-center">Бронирование нейрофотосессии</CardTitle>
+                <CardTitle className="text-2xl text-center">Заказ нейропортретов</CardTitle>
                 <CardDescription className="text-center text-lg">
-                  Расскажите о желаемом стиле и мы подготовим персональное предложение
+                  Опишите желаемый стиль и мы создадим уникальные портреты
                 </CardDescription>
               </CardHeader>
               <CardContent>
@@ -534,11 +534,11 @@ function Index() {
                   
                   <div className="space-y-2">
                     <Label htmlFor="message" className="text-base font-semibold">
-                      Пожелания к съемке
+                      Описание стиля
                     </Label>
                     <Textarea
                       id="message"
-                      placeholder="Опишите желаемый стиль, образ или особые пожелания к фотосессии..."
+                      placeholder="Опишите желаемый стиль: 'классический портрет', 'киберпанк', 'в стиле Disney', 'фэнтези эльф' и т.д."
                       value={formData.message}
                       onChange={(e) => setFormData({...formData, message: e.target.value})}
                       rows={4}
@@ -551,8 +551,8 @@ function Index() {
                     size="lg" 
                     className="w-full text-lg py-6 hover-scale"
                   >
-                    <Icon name="Calendar" className="mr-2" size={20} />
-                    Записаться на съемку
+                    <Icon name="Wand2" className="mr-2" size={20} />
+                    Заказать нейропортреты
                   </Button>
                   
                   <p className="text-sm text-muted-foreground text-center">
@@ -572,7 +572,7 @@ function Index() {
             <div>
               <div className="text-2xl font-bold mb-4 text-primary">НейроФото</div>
               <p className="text-background/80 mb-4">
-                Создаем уникальные портреты с помощью нейрофотографии и современных технологий
+                Создаем уникальные портреты с помощью нейрофотографии и современных ИИ-технологий
               </p>
               <div className="flex space-x-4">
                 {['Phone', 'Mail', 'Instagram'].map((icon, index) => (
@@ -587,7 +587,7 @@ function Index() {
               <h3 className="font-semibold mb-4">Услуги</h3>
               <ul className="space-y-2 text-background/80">
                 <li>Бизнес-портреты</li>
-                <li>Креативная съемка</li>
+                <li>Креативные портреты</li>
                 <li>Семейные фото</li>
                 <li>Fashion-портреты</li>
               </ul>
@@ -608,7 +608,7 @@ function Index() {
               <ul className="space-y-2 text-background/80">
                 <li>+7 (495) 123-45-67</li>
                 <li>hello@neirofoto.ru</li>
-                <li>Москва, ул. Арбат, 25</li>
+                <li>Москва, онлайн-сервис</li>
               </ul>
             </div>
           </div>
