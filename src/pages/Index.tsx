@@ -33,7 +33,7 @@ function Index() {
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
             <div className="text-2xl font-bold gradient-text">
-              БизнесПро
+              НейроФото
             </div>
             <div className="hidden md:flex items-center space-x-6">
               {['Главная', 'Преимущества', 'Портфолио', 'Отзывы', 'Цены', 'Контакты'].map((item, index) => (
@@ -46,7 +46,7 @@ function Index() {
                 </button>
               ))}
               <Button onClick={() => scrollToSection('order')} className="hover-scale">
-                Заказать
+                Записаться
               </Button>
             </div>
             <button className="md:hidden">
@@ -62,12 +62,12 @@ function Index() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="animate-fade-in">
               <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
-                Продвигаем ваш бизнес на 
-                <span className="gradient-text"> новый уровень</span>
+                Создаем портреты будущего с 
+                <span className="gradient-text"> нейрофотографией</span>
               </h1>
               <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
-                Комплексные решения для роста вашего бизнеса. Профессиональная команда, 
-                проверенные методы, гарантированный результат.
+                Уникальные портреты, созданные с помощью ИИ. Профессиональная съемка 
+                с креативной обработкой, которая подчеркнет вашу индивидуальность.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button 
@@ -75,8 +75,8 @@ function Index() {
                   className="hover-scale text-lg px-8 py-6"
                   onClick={() => scrollToSection('order')}
                 >
-                  <Icon name="Rocket" className="mr-2" size={20} />
-                  Начать проект
+                  <Icon name="Camera" className="mr-2" size={20} />
+                  Записаться на съемку
                 </Button>
                 <Button 
                   variant="outline" 
@@ -84,15 +84,15 @@ function Index() {
                   className="hover-scale text-lg px-8 py-6"
                   onClick={() => scrollToSection('portfolio')}
                 >
-                  <Icon name="Eye" className="mr-2" size={20} />
-                  Посмотреть работы
+                  <Icon name="Image" className="mr-2" size={20} />
+                  Посмотреть портфолио
                 </Button>
               </div>
             </div>
             <div className="animate-scale-in">
               <img 
-                src="/img/fb939ce1-b67a-468a-b85f-4a90230c575b.jpg" 
-                alt="Современный бизнес" 
+                src="/img/44819ea1-7555-4a47-81d2-f1ea12d71659.jpg" 
+                alt="Студия нейрофотографии" 
                 className="w-full h-auto rounded-2xl shadow-2xl hover-scale"
               />
             </div>
@@ -105,44 +105,44 @@ function Index() {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16 animate-fade-in">
             <h2 className="text-3xl md:text-5xl font-bold mb-6">
-              Почему выбирают <span className="gradient-text">нас</span>
+              Почему выбирают <span className="gradient-text">НейроФото</span>
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Мы предлагаем уникальные решения, которые действительно работают
+              Мы создаем уникальные портреты, которые невозможно повторить
             </p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
             {[
               {
-                icon: 'Target',
-                title: 'Точное попадание',
-                description: 'Анализируем вашу нишу и находим самые эффективные решения'
+                icon: 'Sparkles',
+                title: 'ИИ-технологии',
+                description: 'Используем новейшие нейросети для создания уникальных портретов'
               },
               {
-                icon: 'Users',
-                title: 'Команда экспертов',
-                description: 'Профессионалы с опытом работы более 5 лет в digital-сфере'
+                icon: 'Camera',
+                title: 'Профессиональная съемка',
+                description: 'Опытные фотографы с премиальным оборудованием'
               },
               {
-                icon: 'TrendingUp',
-                title: 'Рост результатов',
-                description: 'Гарантируем увеличение конверсии на 40% в первые 3 месяца'
+                icon: 'Palette',
+                title: 'Креативная обработка',
+                description: 'Каждый портрет - произведение искусства с авторским стилем'
               },
               {
-                icon: 'Shield',
-                title: 'Полная гарантия',
-                description: 'Возвращаем деньги, если не достигнем заявленных показателей'
+                icon: 'Heart',
+                title: 'Индивидуальный подход',
+                description: 'Учитываем ваши пожелания и создаем уникальный образ'
               },
               {
-                icon: 'Clock',
-                title: '24/7 поддержка',
-                description: 'Всегда на связи для решения любых вопросов и задач'
+                icon: 'Zap',
+                title: 'Быстрый результат',
+                description: 'Готовые портреты через 2-3 дня после съемки'
               },
               {
                 icon: 'Award',
-                title: 'Лучшие практики',
-                description: 'Используем только проверенные инструменты и методологии'
+                title: 'Гарантия качества',
+                description: 'Переснимаем бесплатно, если результат вас не устроит'
               }
             ].map((advantage, index) => (
               <Card key={index} className="hover-scale h-full animate-fade-in border-2 hover:border-primary/20 transition-all duration-300">
@@ -171,53 +171,53 @@ function Index() {
               Наши <span className="gradient-text">работы</span>
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Примеры успешных проектов, которые приносят реальную прибыль
+              Портреты, которые покорили сердца наших клиентов
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
               {
-                title: 'Интернет-магазин электроники',
-                description: 'Увеличили продажи на 180% за 6 месяцев',
-                category: 'E-commerce',
-                result: '+180% продаж'
+                title: 'Бизнес-портреты',
+                description: 'Элегантные корпоративные снимки в стиле sci-fi',
+                category: 'Бизнес',
+                result: '50+ кадров'
               },
               {
-                title: 'Медицинская клиника',
-                description: 'Привлекли 500+ новых пациентов',
-                category: 'Медицина',
-                result: '+500 клиентов'
+                title: 'Креативные портреты',
+                description: 'Художественные образы с фантастическими элементами',
+                category: 'Арт',
+                result: '30+ вариантов'
               },
               {
-                title: 'Курсы программирования',
-                description: 'Запустили онлайн-обучение с нуля',
-                category: 'Образование',
-                result: '1000+ студентов'
+                title: 'Семейная съемка',
+                description: 'Волшебные семейные портреты в сказочном стиле',
+                category: 'Семья',
+                result: '40+ фото'
               },
               {
-                title: 'Ресторанная сеть',
-                description: 'Автоматизировали процесс заказов',
-                category: 'HoReCa',
-                result: '-30% затрат'
+                title: 'Fashion-портреты',
+                description: 'Модные образы с футуристическими деталями',
+                category: 'Мода',
+                result: '60+ снимков'
               },
               {
-                title: 'Фитнес-клуб',
-                description: 'Создали мобильное приложение',
-                category: 'Спорт',
-                result: '+90% удержания'
+                title: 'Детские портреты',
+                description: 'Сказочные образы для самых маленьких',
+                category: 'Дети',
+                result: '25+ кадров'
               },
               {
-                title: 'Строительная компания',
-                description: 'Полностью переработали сайт',
-                category: 'Строительство',
-                result: '+250% лидов'
+                title: 'Свадебная съемка',
+                description: 'Романтические портреты молодоженов',
+                category: 'Свадьба',
+                result: '100+ фото'
               }
             ].map((project, index) => (
               <Card key={index} className="group hover-scale overflow-hidden animate-fade-in border-2 hover:border-primary/20 transition-all duration-300">
                 <div className="aspect-video bg-gradient-to-br from-primary/10 to-secondary/10 relative">
                   <img 
-                    src="/img/652c1438-40c1-4cdb-b33e-3a8a747e7712.jpg" 
+                    src="/img/18da991f-640b-4335-9127-e6f774119e96.jpg" 
                     alt={project.title}
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                   />
@@ -252,7 +252,7 @@ function Index() {
               Отзывы <span className="gradient-text">клиентов</span>
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Что говорят о нас те, кто уже достиг успеха
+              Что говорят те, кто уже получил свои нейропортреты
             </p>
           </div>
 
@@ -260,21 +260,21 @@ function Index() {
             {[
               {
                 name: 'Анна Петрова',
-                position: 'CEO, TechStart',
+                position: 'Модель',
                 rating: 5,
-                text: 'Благодаря команде БизнесПро наша выручка выросла в 3 раза! Профессиональный подход и отличные результаты.'
+                text: 'Невероятные портреты! Такого результата я не ожидала. Каждый кадр - как из фантастического фильма!'
               },
               {
-                name: 'Михаил Иванов',
-                position: 'Директор, МедЦентр',
+                name: 'Михаил Громов',
+                position: 'Предприниматель',
                 rating: 5,
-                text: 'Создали нам современный сайт и настроили рекламу. Поток пациентов увеличился на 200%!'
+                text: 'Сделал корпоративные фото для LinkedIn. Коллеги в восторге! Выглядит стильно и современно.'
               },
               {
-                name: 'Елена Сидорова',
-                position: 'Основатель, EduPlatform',
+                name: 'Елена Смирнова',
+                position: 'Художница',
                 rating: 5,
-                text: 'Запустили нашу образовательную платформу с нуля. Сейчас у нас более 1000 активных студентов.'
+                text: 'Это не просто фотография - это искусство! Команда НейроФото превзошла все мои ожидания.'
               }
             ].map((review, index) => (
               <Card key={index} className="hover-scale animate-fade-in border-2 hover:border-primary/20 transition-all duration-300">
@@ -310,50 +310,50 @@ function Index() {
               Тарифы и <span className="gradient-text">цены</span>
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Выберите оптимальный пакет для вашего бизнеса
+              Выберите подходящий пакет для вашей нейрофотосессии
             </p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
             {[
               {
-                title: 'Стартовый',
-                price: '50 000',
-                period: 'за проект',
+                title: 'Базовый',
+                price: '15 000',
+                period: 'за съемку',
                 features: [
-                  'Анализ ниши и конкурентов',
-                  'Создание сайта-визитки',
-                  'Базовая SEO-оптимизация',
-                  'Настройка аналитики',
-                  '1 месяц поддержки'
+                  '1 час съемки в студии',
+                  '15 обработанных нейропортретов',
+                  '3 стиля на выбор',
+                  'Готовые фото через 3 дня',
+                  'Файлы в высоком разрешении'
                 ],
                 popular: false
               },
               {
-                title: 'Бизнес',
-                price: '120 000',
-                period: 'за проект',
+                title: 'Премиум',
+                price: '25 000',
+                period: 'за съемку',
                 features: [
-                  'Полноценный интернет-магазин',
-                  'Интеграция с CRM и 1С',
-                  'Настройка рекламы в Яндекс и Google',
-                  'SMM-продвижение',
-                  '3 месяца поддержки',
-                  'Обучение команды'
+                  '2 часа съемки + консультация',
+                  '30 обработанных нейропортретов',
+                  '5 уникальных стилей',
+                  'Готовые фото через 2 дня',
+                  'Печатные версии в подарок',
+                  'Дополнительные образы'
                 ],
                 popular: true
               },
               {
-                title: 'Премиум',
-                price: '250 000',
-                period: 'за проект',
+                title: 'VIP',
+                price: '45 000',
+                period: 'за съемку',
                 features: [
-                  'Комплексная цифровая экосистема',
-                  'Мобильное приложение',
-                  'Автоматизация бизнес-процессов',
-                  'Персональный менеджер',
-                  '6 месяцев поддержки',
-                  'Консалтинг по развитию'
+                  '4 часа съемки + стилист',
+                  '50+ обработанных портретов',
+                  'Безлимитные стили',
+                  'Экспресс-доставка за 24 часа',
+                  'Эксклюзивная фотокнига',
+                  'Персональный куратор'
                 ],
                 popular: false
               }
@@ -389,7 +389,7 @@ function Index() {
                     variant={plan.popular ? 'default' : 'outline'}
                     onClick={() => scrollToSection('order')}
                   >
-                    Выбрать тариф
+                    Выбрать пакет
                   </Button>
                 </CardContent>
               </Card>
@@ -406,15 +406,15 @@ function Index() {
               Свяжитесь с <span className="gradient-text">нами</span>
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Готовы обсудить ваш проект и ответить на все вопросы
+              Готовы создать ваш уникальный нейропортрет?
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 gap-12">
             <div className="animate-fade-in">
               <img 
-                src="/img/b1a29af5-8c7d-47f3-85ab-d74f45e4d20e.jpg" 
-                alt="Команда БизнесПро" 
+                src="/img/647e57a9-2597-4f4e-9716-d236e8fd1f54.jpg" 
+                alt="Фотограф за работой" 
                 className="w-full h-auto rounded-2xl shadow-2xl hover-scale"
               />
             </div>
@@ -430,19 +430,19 @@ function Index() {
                   {
                     icon: 'Mail',
                     title: 'Email',
-                    content: 'hello@biznespro.ru',
-                    href: 'mailto:hello@biznespro.ru'
+                    content: 'hello@neirofoto.ru',
+                    href: 'mailto:hello@neirofoto.ru'
                   },
                   {
                     icon: 'MapPin',
-                    title: 'Адрес',
-                    content: 'Москва, ул. Тверская, 15',
+                    title: 'Студия',
+                    content: 'Москва, ул. Арбат, 25',
                     href: '#'
                   },
                   {
                     icon: 'Clock',
                     title: 'Режим работы',
-                    content: 'Пн-Пт: 9:00-20:00, Сб-Вс: 10:00-18:00',
+                    content: 'Ежедневно: 10:00-22:00',
                     href: '#'
                   }
                 ].map((contact, index) => (
@@ -470,18 +470,18 @@ function Index() {
           <div className="max-w-2xl mx-auto">
             <div className="text-center mb-12 animate-fade-in">
               <h2 className="text-3xl md:text-5xl font-bold mb-6">
-                Оформить <span className="gradient-text">заказ</span>
+                Записаться на <span className="gradient-text">съемку</span>
               </h2>
               <p className="text-xl text-muted-foreground">
-                Заполните форму и мы свяжемся с вами в течение часа
+                Заполните форму и мы свяжемся с вами для уточнения деталей
               </p>
             </div>
 
             <Card className="animate-scale-in shadow-2xl border-2">
               <CardHeader>
-                <CardTitle className="text-2xl text-center">Бесплатная консультация</CardTitle>
+                <CardTitle className="text-2xl text-center">Бронирование нейрофотосессии</CardTitle>
                 <CardDescription className="text-center text-lg">
-                  Расскажите о вашем проекте и получите персональное предложение
+                  Расскажите о желаемом стиле и мы подготовим персональное предложение
                 </CardDescription>
               </CardHeader>
               <CardContent>
@@ -534,11 +534,11 @@ function Index() {
                   
                   <div className="space-y-2">
                     <Label htmlFor="message" className="text-base font-semibold">
-                      Сообщение
+                      Пожелания к съемке
                     </Label>
                     <Textarea
                       id="message"
-                      placeholder="Расскажите о вашем проекте, целях и пожеланиях..."
+                      placeholder="Опишите желаемый стиль, образ или особые пожелания к фотосессии..."
                       value={formData.message}
                       onChange={(e) => setFormData({...formData, message: e.target.value})}
                       rows={4}
@@ -551,8 +551,8 @@ function Index() {
                     size="lg" 
                     className="w-full text-lg py-6 hover-scale"
                   >
-                    <Icon name="Send" className="mr-2" size={20} />
-                    Отправить заявку
+                    <Icon name="Calendar" className="mr-2" size={20} />
+                    Записаться на съемку
                   </Button>
                   
                   <p className="text-sm text-muted-foreground text-center">
@@ -570,12 +570,12 @@ function Index() {
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-4 gap-8">
             <div>
-              <div className="text-2xl font-bold mb-4 text-primary">БизнесПро</div>
+              <div className="text-2xl font-bold mb-4 text-primary">НейроФото</div>
               <p className="text-background/80 mb-4">
-                Продвигаем ваш бизнес с помощью современных цифровых решений
+                Создаем уникальные портреты с помощью нейрофотографии и современных технологий
               </p>
               <div className="flex space-x-4">
-                {['Phone', 'Mail', 'MessageCircle'].map((icon, index) => (
+                {['Phone', 'Mail', 'Instagram'].map((icon, index) => (
                   <div key={index} className="w-10 h-10 bg-primary rounded-full flex items-center justify-center hover-scale cursor-pointer">
                     <Icon name={icon as any} size={20} className="text-white" />
                   </div>
@@ -586,19 +586,19 @@ function Index() {
             <div>
               <h3 className="font-semibold mb-4">Услуги</h3>
               <ul className="space-y-2 text-background/80">
-                <li>Разработка сайтов</li>
-                <li>Интернет-маркетинг</li>
-                <li>SEO-продвижение</li>
-                <li>Контекстная реклама</li>
+                <li>Бизнес-портреты</li>
+                <li>Креативная съемка</li>
+                <li>Семейные фото</li>
+                <li>Fashion-портреты</li>
               </ul>
             </div>
             
             <div>
-              <h3 className="font-semibold mb-4">Компания</h3>
+              <h3 className="font-semibold mb-4">Информация</h3>
               <ul className="space-y-2 text-background/80">
                 <li>О нас</li>
-                <li>Наша команда</li>
-                <li>Карьера</li>
+                <li>Портфолио</li>
+                <li>Отзывы</li>
                 <li>Блог</li>
               </ul>
             </div>
@@ -607,14 +607,14 @@ function Index() {
               <h3 className="font-semibold mb-4">Контакты</h3>
               <ul className="space-y-2 text-background/80">
                 <li>+7 (495) 123-45-67</li>
-                <li>hello@biznespro.ru</li>
-                <li>Москва, ул. Тверская, 15</li>
+                <li>hello@neirofoto.ru</li>
+                <li>Москва, ул. Арбат, 25</li>
               </ul>
             </div>
           </div>
           
           <div className="border-t border-background/20 mt-8 pt-8 text-center text-background/60">
-            <p>&copy; 2024 БизнесПро. Все права защищены.</p>
+            <p>&copy; 2024 НейроФото. Все права защищены.</p>
           </div>
         </div>
       </footer>
